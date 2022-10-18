@@ -61,7 +61,7 @@ Pronto o front end estará rodando localmente
 O usuário deverá estar habilitado a cadastrar os clientes no formulário, e ao salvar, atualizar o mapa com o ponto (pin) daquele cadastro e a tabela com os dados do cliente. Na tabela contém um botão para excluir todos os dados, que remove tudo do banco, mapa e tabela.
 
 
-![Layout](challenge.png)
+![Layout](Captura de Tela 2022-10-18 às 10.38.01.png)
 
 
 ## Tecnologias utilizadas
