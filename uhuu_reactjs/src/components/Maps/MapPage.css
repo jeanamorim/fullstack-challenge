@@ -1,0 +1,24 @@
+.map-marker {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1;
+  text-align: center;
+  color: #000;
+  text-transform: capitalize;
+  margin: 1px;
+}
+.map-marker-container {
+  background-color: #ffffff;
+  color: white;
+  min-height: 50px;
+  padding: 0px 50px 0px 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:"montserrat";
+  border-color: #999999;
+  border-width: 1px;
+  opacity: 0.8;
+  justify-content: center;
+}

@@ -1,0 +1,49 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Endereco {
+    id        Int      @id @default(autoincrement())
+    logradouro     String
+    numero   String
+    bairro   String
+    complemento   String
+    cidade   String
+    estado   String
+    pais   String
+    author    Client   @relation(fields: [authorId], references: [id])
+    authorId  Int
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt()
+
+    @@map("endereco")
+}
+
+model Geolocalizacao {
+     id        Int      @id @default(autoincrement())
+    latitude String?
+    longitude  String
+    author    Client   @relation(fields: [authorId], references: [id])
+    authorId  Int
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt()
+
+      @@map("geolocalizacao")
+}
+
+model Client {
+     id        Int      @id @default(autoincrement())
+    name  String
+    peso String
+    endereco Endereco[]
+    geolocalizacao Geolocalizacao[]
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt()
+
+    @@map("client")
+}
