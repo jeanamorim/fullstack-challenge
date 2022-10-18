@@ -27,11 +27,11 @@ Se dê tudo ok, sua aplicação ja estará rodando na porta http://localhost:300
 5 - Na mesma porta que está rodando a api passe um /swagger para abrir o swagger e poder cadastrar nas rotas http://localhost:3000/swagger
 
 
-Segue as rota:
+Segue as rotas:
 
 Cadastrar: 
 
-CLIENT/CREATE -- criar um cliente com suas cordenads e pedo
+CLIENT/CREATE -- criar um cliente com suas coordenadas e endereço
 
 CLIENTE/LIST  -- listar todos os registro paginados
 
@@ -39,7 +39,7 @@ CLIENT/:ID -- listar apenas um cliente
 
 CLIENT/DELETE -- Deletar todos os cientes do BD
 
-CLIENT/GEOCODE/CEP -- Buscar a localização do registro junto cm o endereço
+CLIENT/GEOCODE/CEP -- Buscar a localização do registro junto com o endereço
 
 
 ## Installation do front-end
